@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="container">
 <Routes>
+  
   <Route path="/" element={<Landing/>}></Route>
 </Routes>
     </div>
