@@ -1,13 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import Landing from './pages/Landing';
+import Converter from './pages/Converter';
+import Current from './pages/Current';
+
 
 function App() {
   return (
     <div className="container">
 <Routes>
-  
-  <Route path="/" element={<Landing/>}></Route>
+  <Route path="/" element={<Converter/>}></Route>
+  <Route path="/current" element={<Current/>}></Route>
 </Routes>
     </div>
   );
