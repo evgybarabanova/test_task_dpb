@@ -1,7 +1,7 @@
-import retrieveConvert from './retrieveConvert'
-import convertCurrencies from './convertCurrencies'
+import retrieveRate from './retrieveRate'
+import retrieveRates from './retrieveRates'
 
 export {
-  retrieveConvert,
-  convertCurrencies
+  retrieveRate,
+  retrieveRates
 }

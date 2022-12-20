@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react"
 import './Current.css'
-import { retrieveConvert } from "../logic"
+import { retrieveRates } from "../logic"
 
 export default function Current() {
-  const [rates, setRates] = useState([])
+  const [rates, setRates] = useState()
 
   useEffect(() => {
     try {
-      retrieveConvert()
+      retrieveRates()
         .then((rates) => {
           setRates(rates);
         })
