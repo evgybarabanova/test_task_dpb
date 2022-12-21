@@ -6,7 +6,7 @@ export default function retrieveRates(base) {
 
   return axios.get(url, {
     headers: {
-      'X-CoinAPI-Key': 'A0837D95-FD2D-477E-B933-BFE1F873ECF2',
+      'X-CoinAPI-Key': 'FC9F038B-402F-4CE0-898B-A27CD84E5A72',
     }
   })
     .then(res => {
