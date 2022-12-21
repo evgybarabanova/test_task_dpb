@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
-import './Current.css'
+import { Link } from 'react-router-dom'
+import '../tailwind.css'
 import { retrieveRates } from "../logic"
 
 export default function Current() {
@@ -25,8 +26,7 @@ export default function Current() {
 
   return (
     <>
-      <h1>Today's Cryptocurrency Prices</h1>
-      <h2>Currency crypto price in 1 USD</h2>
+      <h1>Currency crypto price</h1>
       <div>
         <div className="absolute inset-y-0 right-0 flex items-center">
           <label htmlFor="currency" className="sr-only">
@@ -72,7 +72,7 @@ export default function Current() {
           })}
         </tbody>
       </table>
-
+      <Link to='/'>Back to converter</Link>
     </>
   )
 }

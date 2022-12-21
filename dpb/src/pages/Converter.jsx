@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from 'react-router-dom'
-import './Converter.css'
+import '../tailwind.css'
 import { retrieveRate } from '../logic'
 
 export default function Converter() {
