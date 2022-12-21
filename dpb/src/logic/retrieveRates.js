@@ -4,21 +4,24 @@ export default function retrieveRates(base) {
 
   const url = `https://rest.coinapi.io/v1/exchangerate/${base}`
 
-    return axios.get(url, {
-      headers: {
-        'X-CoinAPI-Key': '4F117BC9-4800-4CAF-8401-C382862613A0',
-      }
-    })
-      .then(res => {
+  return axios.get(url, {
+    headers: {
+      'X-CoinAPI-Key': 'A0837D95-FD2D-477E-B933-BFE1F873ECF2',
+    }
+  })
+    .then(res => {
 
-        const { rate } = res.data
-  
-        return rate
-  
-      })
-      .catch(error => {
-        const message = error.response.data.error
-  
-        throw new Error(message)
-      })
+      const rates = res.data.rates
+
+      return rates
+
+      //console.log(res.data.rates);
+
+    })
+    .catch(error => {
+      const message = error.response.data.error
+
+      throw new Error(message)
+    })
 }
+

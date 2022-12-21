@@ -68,18 +68,10 @@ export default function Converter() {
 
                     <select name="from" id="from" onChange={handleCurrencySelectorChanged} className="h-full px-4 py-2 pl-2 text-gray-500 bg-transparent border-t border-b border-r border-transparent border-gray-300 focus:ring-indigo-500 bo focus:border-indigo-500 pr-7 sm:text-sm rounded-r-md">
                         <option value="">--Choose and option--</option>
-                        <option value="USD">
-                            USD
-                        </option>
-                        <option value="EUR">
-                            EUR
-                        </option>
-                        <option value="EUR">
-                            CNY
-                        </option>
-                        <option value="EUR">
-                            GBP
-                        </option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="EUR">CNY</option>
+                        <option value="EUR">GBP</option>
                     </select>
                 </div>
             </div>
@@ -100,12 +92,8 @@ export default function Converter() {
 
                         <select name="to" id="to" onChange={handleCryptoSelectorChanged} className="h-full px-4 py-2 pl-2 text-gray-500 bg-transparent border-t border-b border-r border-transparent border-gray-300 focus:ring-indigo-500 bo focus:border-indigo-500 pr-7 sm:text-sm rounded-r-md">
                             <option value="">--Choose and option--</option>
-                            <option value="ETH">
-                                ETH
-                            </option>
-                            <option value="BCH">
-                                BCH
-                            </option>
+                            <option value="ETH">ETH</option>
+                            <option value="BCH">BCH</option>
                         </select>
                     </div>
                 </div>
